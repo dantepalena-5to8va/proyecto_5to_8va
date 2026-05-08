@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tienda IRON BALL</title>
+
+    <link rel="stylesheet" href=".css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+<body>
+
+<header class="header" id="inicio">
+    <h1>
+        <img class= "steelball1" src="Steel_Ball.png" alt="" height="200px" width="200px">
+        Tienda IRON Ball
+        <img class= "steelball2" src="Steel_Ball.png" alt="" height="200px" width="200px">
+    </h1>
+    <nav class="navbar">
+        <ul class="nav nav-underline">
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#discos">Discos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#stickers">Stickers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#libros">Libros</a>
+            </li>
+
+            <li class="nav-item push">
+                <a class="nav-link text-white" href="#carrito">
+                    Carrito
+                    <img src="carrito2.webp" height="20" width="20">
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+</header>
+
+
+<br></br>
+
+   <div class="seccion-discos" 
+   data-aos="fade-up"
+   data-aos-delay="100"
+   data-aos-offset="0">
+    <div class="container py-5">
+        
+        <h2 id="discos" class="text-white section-title text-center mb-5">Nuestros Discos</h2>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <a href="https://www.youtube.com/playlist?list=OLAK5uy_lNojWuj8PKhbqVFZBpSkUpCYcrJbYt8s4" target="_blank">
+                        <img src="canciones/disco_mincraft2.png" class="card-img-top item-img" alt="Minecraft Alpha">
+                    </a>
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-white">Disco Minecraft Alpha</h5>
+                        <h4 class="text-white"> $5000 </h4>
+                        <button class="btn-agregar" onclick="agregardisco1()">Agregar Disco</button>
+                        <div class="form-check mt-3 d-inline-block">
+                            <input class="form-check-input" type="checkbox" id="vinillo1">
+                            <label class="form-check-label text-white" for="c1">Pasar a vinilo (+10k)</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <a href="https://www.youtube.com/playlist?list=OLAK5uy_mSH30PsabObEwBb9LClNBzLhjGYZDSfec" target="_blank">
+                        <img src="canciones/disco_mincraft.png" class="card-img-top item-img">
+                    </a>
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-white">Disco Minecraft Beta</h5>
+                        <h4 class="text-white"> $5000 </h4>
+                        <button class="btn-agregar" onclick="agregardisco5()">Agregar Disco</button>
+                        <div class="form-check mt-3 d-inline-block">
+                            <input class="form-check-input" type="checkbox" id="vinillo2">
+                            <label class="form-check-label text-white" for="c2">Pasar a vinilo (+10k)</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <a href="https://www.youtube.com/playlist?list=PLKXdyINOQYsb38jn5HGiF6w8X3rph4IIx" target="_blank">
+                        <img src="canciones/disco_undertale.jpg" class="card-img-top item-img">
+                    </a>
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-white">Disco Undertale</h5>
+                        <h4 class="text-white"> $4000 </h4>
+                        <button class="btn-agregar" onclick="agregardisco2()">Agregar Disco</button>
+                        <div class="form-check mt-3 d-inline-block">
+                            <input class="form-check-input" type="checkbox" id="vinillo3">
+                            <label class="form-check-label text-white" for="c3">Pasar a vinilo (+10k)</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <a href="https://www.youtube.com/playlist?list=PLk83Uk_KUSSfZUsa8Lj-GHLYL1t-j3ArZ" target="_blank">
+                        <img src="canciones/espadas, magos y a.jpg" class="card-img-top item-img">
+                    </a>
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-white">Disco Rata Blanca</h5>
+                        <h4 class="text-white"> $7500 </h4>
+                        <button class="btn-agregar" onclick="agregardisco3()">Agregar Disco</button>
+                        <div class="form-check mt-3 d-inline-block">
+                            <input class="form-check-input" type="checkbox" id="vinillo4">
+                            <label class="form-check-label text-white" for="c4">Pasar a vinilo (+10k)</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <a href="https://www.youtube.com/watch?v=PwmNExAF1zg" target="_blank">
+                        <img src="canciones/Sodastereo.jpg" class="card-img-top item-img">
+                    </a>
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-white">Disco Soda Stereo</h5>
+                        <h4 class="text-white"> $8500 </h4>
+                        <button class="btn-agregar" onclick="agregardisco4()">Agregar Disco</button>
+                        <div class="form-check mt-3 d-inline-block">
+                            <input class="form-check-input" type="checkbox" id="vinillo5">
+                            <label class="form-check-label text-white" for="c5">Pasar a vinilo (+10k)</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+   </div>
+
+<br></br>
+
+
+
+
+
+ <div class="seccion-stickers"
+ data-aos="fade-up"
+ data-aos-offset="0"
+ data-aos-delay="20">
+        <h2 id="stickers" class="section-title text-center my-5 text-white">Nuestros Stickers</h2>
+        <div class="row g-4 justify-content-center">
+            <h4 class="text-white text-center">Valor de cada uno: $1723</h4>
+            <div class="col-md-2 col-6 text-center">
+                <div class="sticker-box" title="Momo como se hace una jenny?">
+                    <img src="stickers/ssticker_3.jpg" class="img-fluid sticker-img" onclick="agregarsticker()">
+                </div>
+            </div>
+            <div class="col-md-2 col-6 text-center">
+                <div class="sticker-box" title="2011x">
+                    <img src="stickers/sticker_1.jpg" class="img-fluid sticker-img" onclick="agregarsticker2()">
+                </div>
+            </div>
+            <div class="col-md-2 col-6 text-center">
+                <div class="sticker-box" title="Ried">
+                    <img src="stickers/sticker_2.jpg" class="img-fluid sticker-img" onclick="agregarsticker3()">
+                </div>
+            </div>
+            <div class="col-md-2 col-6 text-center">
+                <div class="sticker-box" title="desaprobe porque no aprobe">
+                    <img src="stickers/sticker_4.jpg" class="img-fluid sticker-img" onclick="agregarsticker4()">
+                </div>
+            </div>
+            <div class="col-md-2 col-6 text-center">
+                <div class="sticker-box" title="cabalo sonriente">
+                    <img src="stickers/sticker_5.jpg" class="img-fluid sticker-img" onclick="agregarsticker5()">
+                </div>
+            </div>
+        </div>
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<br></br>
+
+
+<div class="seccion-libros1" id="libros">
+<div id="carouselExampleFade" class="carousel slide carousel-fade">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <div class="card h-100">
+                <img src="libros/libro1.jpg" class="card-img-top2" alt="Libro 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-white">El Libro Troll</h5>
+                        <div class="py-3">
+                            <label class="text-white me-2"><input type="radio" name="l1" id ="blanda1"> Blanda $14500</label>
+                            <label class="text-white"><input type="radio" name="l1" id="dura1"> Dura $17500</label>
+                        </div>
+                    <button class="btn-agregar" onclick="añadirlibro1()">Añadir libro</button>
+                </div>
+         </div>
+    </div>
+    <div class="carousel-item">
+      <div class="card h-100">
+            <img src="libros/libro2.webp" class="card-img-top2" alt="">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-white">Luna de Plutón</h5>
+                        <div class="py-3">
+                            <label class="text-white me-2"><input type="radio" name="l2" id="blanda2"> Blanda $13500</label>
+                            <label class="text-white"><input type="radio" name="l2" id="dura2"> Dura $15000</label>
+                        </div>
+                 <button class="btn-agregar" onclick="añadirlibro2()">Añadir libro</button>
+            </div>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <div class="card h-100">
+            <img src="libros/libro3.jpg" class="card-img-top2" alt="">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-white">Manifiesto del Partido Comunista </h5>
+                        <div class="py-3">
+                            <label class="text-white me-2"><input type="radio" name="l3" id="blanda3"> Blanda $20000</label>
+                            <label class="text-white"><input type="radio" name="l3" id="dura3"> Dura $40000</label>
+                        </div>
+                <button class="btn-agregar" onclick="añadirlibro3()">Añadir libro</button>
+            </div>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <div class="card h-100">
+            <img src="libros/libro4.jpg" class="card-img-top2" alt="">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-white">JOJO'S Bizzare Adventure Parte 7: Steel Ball Run Vol.1</h5>
+                        <div class="py-3">
+                            <label class="text-white me-2"><input type="radio" name="l4" id="blanda4"> Blanda $12000</label>
+                            <label class="text-white"><input type="radio" name="l4" id="dura4"> Dura $15000</label>
+                        </div>
+                <button class="btn-agregar" onclick="añadirlibro4()">Añadir libro</button>
+            </div>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <div class="card h-100">
+            <img src="libros/libro5.jpg" class="card-img-top2" alt="">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-white" >Guia de Minecraft: Encantamientos y Posiones</h5>
+                        <div class="py-3">
+                            <label class="text-white me-2"><input type="radio" name="l5" id="blanda5">Blanda $14000</label>
+                            <label class="text-white"><input type="radio" name="l5" id="dura5"> Dura $16000</label>
+                    </div>
+                <button class="btn-agregar" onclick="añadirlibro5()">Añadir libro</button>
+            </div>
+        </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+
+
+
+
+<br></br>
+
+
+
+<div id="carrito" class="container mt-5 p-4 text-center" style="background: rgba(0,0,0,0.7); border-radius: 15px; border: 2px solid #007bff;">
+    <h2 class="text-white mb-4">
+        <img src="carrito2.webp" alt="">
+         Carrito 
+         <img src="carrito2.webp" alt="">
+        </h2>
+        <input class="form-check-input" type="checkbox" id="efectivo">
+        <label class="form-check-label text-white" for="c1" >Pagar en efectivo (DESCUENTO DE %10)</label>
+    <h3 class="text-white">Total a pagar: <span id="total-pago" class="text-primary">$0</span></h3>
+    <button class="btn btn-success btn-lg mt-3" onclick="finalizarCompra()">Finalizar Compra</button>
+</div>
+
+
+<script>
+
+    let pago = 0
+
+    let productos = "- "
+
+    function actualizarTotal(){
+        
+        document.getElementById('total-pago').innerText = "$" + pago
+    }
+
+    function agregardisco1(){
+
+        if(vinillo1.checked == true){
+
+            pago = pago + 15000
+
+        }else{
+            
+            pago = pago + 5000
+
+        }
+
+        productos = productos + " Disco Minecraft Alpha -"
+        
+        actualizarTotal()
+    }
+
+    function agregardisco5(){
+
+        if(vinillo2.checked == true){
+            
+            pago = pago + 15000
+        
+        }else{
+
+            pago = pago + 5000
+
+        }
+
+        productos = productos + " Disco Minecraft Beta -"
+
+        actualizarTotal()
+    }
+
+    function agregardisco2(){
+
+        if(vinillo3.checked == true){
+
+            pago = pago + 14000
+
+        }else{
+
+            pago = pago + 4000
+
+        }
+
+        productos = productos + " Disco Undertale -"
+
+        actualizarTotal()
+    }
+
+    function agregardisco3(){
+
+        if(vinillo4.checked == true){
+
+            pago = pago + 17500
+
+        }else{
+
+            pago = pago + 7500
+
+        }
+
+        productos = productos + " Disco Rata Blanca -"
+
+        actualizarTotal()
+    }
+
+    function agregardisco4(){
+
+        if(vinillo5.checked == true){
+
+            pago = pago + 18500
+
+        }else{
+
+            pago = pago + 8500
+
+        }
+
+        productos = productos + " Disco Soda Stereo -"
+
+        actualizarTotal()
+    }
+
+    function agregarsticker(){
+
+        pago = pago + 1723
+
+        productos = productos + " Sticker ¿Momo como hace la Jenny? -"
+
+        actualizarTotal()
+    }
+
+    function agregarsticker2(){
+
+        pago = pago + 1723
+
+        productos = productos + " Sticker 2011x -"
+
+        actualizarTotal()
+
+    }
+
+    function agregarsticker3(){
+
+        pago = pago + 1723
+
+        productos = productos + " Sticker Ried -"
+
+        actualizarTotal()
+    }
+
+    function agregarsticker4(){
+
+        pago = pago + 1723
+
+        productos = productos + " Sticker desaprobe porque no aprobe -"
+
+        actualizarTotal()
+    }
+
+    function agregarsticker5(){
+
+        pago = pago + 1723
+
+        productos = productos + " Sticker cabalo sonriente -"
+
+        actualizarTotal()
+    }
+
+    function añadirlibro1(){
+
+        if(blanda1.checked == true){
+
+            pago = pago + 14500
+
+        }else{
+
+            if(dura1.checked == true){
+
+                pago = pago + 17500
+
+            }else{
+
+                alert("No se selecciono ningun tipo de tapa")
+            }
+        }
+
+        productos = productos + " El Libro Troll -"
+
+        actualizarTotal();
+    }
+
+    function añadirlibro2(){
+
+        if(blanda2.checked == true){
+
+            pago = pago + 13500
+
+        }else{
+
+            if(dura2.checked == true){
+
+                pago = pago + 15000
+
+            }else{
+
+                alert("No se selecciono ningun tipo de tapa")
+            }
+        }
+
+        productos = productos + " Luna de Plutón -"
+
+        actualizarTotal();
+    }
+
+    function añadirlibro3(){
+
+        if(blanda3.checked == true){
+
+            pago = pago + 20000
+
+        }else{
+
+            if(dura3.checked == true){
+
+                pago = pago + 40000
+
+            }else{
+
+                alert("No se selecciono ningun tipo de tapa")
+            }
+        }
+
+        productos = productos + " Manifiesto del Partido Comunista -"
+
+        actualizarTotal();
+    }
+
+    function añadirlibro4(){
+
+        if(blanda4.checked == true){
+
+            pago = pago + 12000
+
+        }else{
+
+            if(dura4.checked == true){
+
+                pago = pago + 15000
+
+            }else{
+
+                alert("No se selecciono ningun tipo de tapa")
+            }
+        }
+
+        productos = productos + " JOJO'S Bizzare Adventure Parte 7: Steel Ball Run Vol.1 -"
+
+        actualizarTotal();
+    }
+    
+    function añadirlibro5(){
+
+        if(blanda5.checked == true){
+
+            pago = pago + 14000
+
+        }else{
+
+            if(dura5.checked == true){
+
+                pago = pago + 16000
+
+            }else{
+
+                alert("No se selecciono ningun tipo de tapa")
+            }
+        }
+
+        productos = productos + " Guia de Minecraft: Encantamientos y Posiones -"
+
+        actualizarTotal();
+    }
+
+    function finalizarCompra() {
+
+        if (pago > 0) {
+
+            if(efectivo.checked == true){
+
+                alert("Se realizo un descuento del 10% por pagar en efectivo")
+
+                pago = pago - (pago * 0.10)
+
+                if(pago > 10000){
+
+                    alert("Se realizo un descuento del 5% porque el total supero los $10000")
+
+                    pago = pago - (pago*0.05)
+
+                }
+
+            }else{
+
+                if(pago > 10000){
+
+                    alert("Se realizo un descuento del 5% porque el total supero los $10000")
+
+                    pago = pago - (pago * 0.05)
+
+                }
+
+            }
+            
+
+            alert("Gracias por tu compra en IRON Ball. Total: $" + pago);
+
+            alert("Los productos que se compraron son: " + productos)
+
+
+            pago = 0;
+            actualizarTotal();
+        } else {
+            alert("El carrito está vacío.");
+        }
+    }
+</script>
+
+
+
+
+
+
+    <div class="text-center mt-5 mb-5">
+        <a href="#inicio" class="btn-volver" id="btn-gif">
+            Volver al Inicio  
+        </a>
+    </div>
+
+    <div id="gif-container">
+        <img src="delorean.gif" alt="Cargando..." id="gif-imagen">
+    </div>
+    
+    <script>
+    document.getElementById('btn-gif').addEventListener('click', function(e) {
+
+        const contenedor = document.getElementById('gif-container');
+
+        contenedor.style.display = 'flex';
+
+        setTimeout(() => {
+
+            contenedor.style.display = 'none';
+
+        }, 4500); 
+
+    });
+    </script>
+
+
+
+    <footer>
+        <p>&copy; 2026 Tienda IRON BALL - Dante Palena & Mateo Rivero</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
