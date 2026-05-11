@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="estilo.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <title>Familia Smith</title>
+
+
+</head>
+<body>
+
+    <button class="botonanterior" onclick="ANTERIOR()">ANTERIOR</button>
+    
+    <button class="botongenerador" onclick="GENERAR()">GENERAR INTEGRANTE</button>
+
+    <button class="botonsiguente" onclick="SIGUIENTE()">SIGUIENTE</button>
+
+    <div id="rickc-137" class="rickc-137">
+
+        <img id="rickim" src="" alt="">
+
+        <h1 id="ricknom"> </h1>
+
+        <h2 id="rickst"> </h2>
+
+        <h2 id="ricksp"> </h2>
+
+        <h2 id="ricklo"></h2>
+
+    </div>
+    
+
+    <script>
+
+
+        const URL = 'https://rickandmortyapi.com/api'
+
+        const ids = ["Rick Sanchez", "Morty Smith", "Summer Smith", "Beth Smith", "Jerry Smith"]
+
+        let cont = 0
+
+        async function GENERAR() {
+
+            if(cont == 0){
+
+                cont = 1
+
+            }
+
+
+            for(let o = 0; o < 5; o++){
+
+                if(cont == 1 && ids[o] == "Rick Sanchez"){
+
+                    Rick()
+        
+                }
+                else{
+
+                    if(cont == 2 && ids[o] == "Morty Smith"){
+
+                        Morty()
+
+                    }else{
+
+                        if(cont == 3 && ids[o] == "Summer Smith"){
+
+                            Summer()
+
+                        }else{
+
+                            if(cont == 4 && ids[o] == "Beth Smith"){
+
+                                Beth()
+
+                            }else{
+
+                                if(cont == 5 && ids[o] == "Jerry Smith"){
+
+                                    Jerry()
+
+                                }
+                            }
+                        }
+                    }
+                }
+            
+            }
+
+            document.body.style.backgroundImage = "url('fondo3.webp')"
+            document.body.style.backgroundSize = "cover"
+            document.body.style.backgroundRepeat = "no-repeat"
+            document.body.style.backgroundPosition = "center"
+            
+        }
+
+        async function ANTERIOR() {
+
+            if(cont == 0){
+
+                alert("PRIMERO DEBE GENERAR AL MIEMBRO DE LA FAMILIA")
+
+            }else{
+
+                if(cont == 1){
+
+                cont = 5
+
+                GENERAR()
+
+            }else{
+
+                cont--
+
+                GENERAR()
+
+            }
+            }
+            
+        }
+
+        async function SIGUIENTE() {
+
+            if(cont == 0){
+
+                alert("PRIMERO DEBE GENERAR AL MIEMBRO DE LA FAMILIA")
+
+            }else{
+
+                if(cont == 5){
+
+                cont = 1
+
+                GENERAR()
+
+            }else{
+
+                cont++
+
+                GENERAR()
+            }
+            }
+        
+            
+        }
+
+        async function Rick() {
+
+            const data = await fetch(URL + '/character/1')
+                    
+            const infoob = await data.json()
+                    
+            document.getElementById("rickim").src = infoob.image
+
+            document.getElementById("ricknom").textContent = infoob.name
+
+            document.getElementById("rickst").textContent = infoob.status
+
+            document.getElementById("ricksp").textContent = infoob.species
+
+            document.getElementById("ricklo").textContent = infoob.location.name
+            
+        }
+
+        async function Morty() {
+
+            const data = await fetch(URL + '/character/2')
+                    
+            const infoob = await data.json()
+                    
+            document.getElementById("rickim").src = infoob.image
+
+            document.getElementById("ricknom").textContent = infoob.name
+
+            document.getElementById("rickst").textContent = infoob.status
+
+            document.getElementById("ricksp").textContent = infoob.species
+
+            document.getElementById("ricklo").textContent = infoob.location.name
+        
+        }
+
+        async function Summer() {
+
+            const data = await fetch(URL + '/character/3')
+                    
+            const infoob = await data.json()
+                    
+            document.getElementById("rickim").src = infoob.image
+
+            document.getElementById("ricknom").textContent = infoob.name
+
+            document.getElementById("rickst").textContent = infoob.status
+
+            document.getElementById("ricksp").textContent = infoob.species
+
+            document.getElementById("ricklo").textContent = infoob.location.name
+            
+        }
+
+        async function Beth() {
+
+            const data = await fetch(URL + '/character/4')
+                    
+            const infoob = await data.json()
+                    
+            document.getElementById("rickim").src = infoob.image
+
+            document.getElementById("ricknom").textContent = infoob.name
+
+            document.getElementById("rickst").textContent = infoob.status
+
+            document.getElementById("ricksp").textContent = infoob.species
+
+            document.getElementById("ricklo").textContent = infoob.location.name
+            
+        }
+
+        async function Jerry() {
+
+            const data = await fetch(URL + '/character/5')
+                    
+            const infoob = await data.json()
+                    
+            document.getElementById("rickim").src = infoob.image
+
+            document.getElementById("ricknom").textContent = infoob.name
+
+            document.getElementById("rickst").textContent = infoob.status
+
+            document.getElementById("ricksp").textContent = infoob.species
+
+            document.getElementById("ricklo").textContent = infoob.location.name
+            
+        }
+
+
+
+    </script>
+
+</body>
+</html>
